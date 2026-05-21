@@ -1,0 +1,8 @@
+{
+  "name": "Pendant Concept",
+  "description": "一份关于乡村振兴农产品文创设计的专业演示文稿，探讨极致写实美学与情感化设计的结合。",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

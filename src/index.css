@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=JetBrains+Mono:wght@400;500&family=Noto+Sans+SC:wght@100;300;400;500;700;900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", "Noto Sans SC", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", serif;
+  --font-mono: "JetBrains Mono", monospace;
+  
+  --color-brand-dark: #0A0A0A;
+  --color-brand-mid: #262626;
+  --color-brand-light: #E5E5E5;
+  --color-brand-accent: #FFFFFF;
+  --color-brand-vibrant: #4BC1A0;
+  --color-brand-bg: #0A0A0A;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-brand-bg text-brand-light font-sans antialiased;
+  }
+}
+
+.scroll-container {
+  width: 100%;
+  position: relative;
+}
+
+.slide-section {
+  min-height: 100vh;
+  width: 100%;
+  @apply relative overflow-hidden border-b border-white/5;
+}
+
+/* Irregular shapes background enhancement */
+.irregular-bg-overlay {
+  @apply absolute pointer-events-none opacity-40 blur-3xl;
+}
